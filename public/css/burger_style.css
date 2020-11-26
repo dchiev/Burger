@@ -1,25 +1,28 @@
 li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
-  
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
 img {
   width: 25%;
 }
-  
-  .form-group {
-    margin-bottom: 5px;
-  }
 
-  body {
-    background-color: #DA291C;
-  }
-  
-  .jumbotron {
-    background-color: #FFC72C;
-  }
+.form-group {
+  margin-bottom: 5px;
+}
 
-  #eatbutton {
-    color:#DA291C;
-  }
+body {
+  background-color: #da291c;
+}
+
+.jumbotron {
+  background-color: #ffc72c;
+}
+
+#left {
+  padding: 10px;
+}
+#eatbutton {
+  color: #da291c;
+}

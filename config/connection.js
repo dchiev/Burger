@@ -1,14 +1,15 @@
 var mysql = require("mysql");
+require('dotenv').config();
+const password = process.env.DB_password;
 
 var connection = mysql.createConnection({
   host: "localhost",
   port: 3306,
   user: "root",
-  password: "bigbang",
+  password: password,
   database: "burgers_db"
 });
 
-// Make connection.
 connection.connect(function(err) {
   if (err) {
     console.error("error connecting: " + err.stack);
