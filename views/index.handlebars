@@ -9,7 +9,7 @@
         <div class="form-group">
           <label for="newburger">Burgers You Want To Try:</label>
           <input type="text" id="newburger" name="burger">
-          <button type="submit" class="btn btn-success" id="addburger"></button>
+          <button type="submit" class="btn btn-success" id="addburger">Add Burger</button>
         </div>
       </form>
 
@@ -21,7 +21,7 @@
         <div class="panel-heading" id="lefthead"><h4>Burgers You Want to Try:</h4></div>
         <div class="panel-body">
           <ul>
-            {{#each burgers}}
+            {{#each burger}}
             {{#unless devoured}}
             <h4> {{this.id}} - {{this.burger_name}} </h4> 
             <button type="button" class="eatburger btn btn-warning" id="eatbutton" data-id="{{this.id}}"
@@ -42,7 +42,7 @@
           </div>
         <div class="panel-body">
           <ul>
-            {{#each burgers}}
+            {{#each burger}}
             {{#if devoured}}
             <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
           
