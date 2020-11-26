@@ -3,13 +3,13 @@
   <div class="jumbotron">
     <h1>Eat-Da-Burger</h1>
     <br>
-  
+
 <img src= "../public/img/burger.png">
       <form class="create-form">
         <div class="form-group">
           <label for="newburger">Burgers You Want To Try:</label>
           <input type="text" id="newburger" name="burger">
-          <button type="submit" class="btn btn-success" id="addburger">Add It To The List!!</button>
+          <button type="submit" class="btn btn-success" id="addburger"></button>
         </div>
       </form>
 
@@ -18,12 +18,12 @@
   <div class="row">
     <div class="col-sm-6">
       <div class="panel panel-default">
-        <div class="panel-heading"><h3>Burgers You Want to Try:</h3></div>
+        <div class="panel-heading" id="lefthead"><h4>Burgers You Want to Try:</h4></div>
         <div class="panel-body">
           <ul>
             {{#each burgers}}
             {{#unless devoured}}
-            <h4> {{this.id}} - {{this.burger_name}} </h4>
+            <h4> {{this.id}} - {{this.burger_name}} </h4> 
             <button type="button" class="eatburger btn btn-warning" id="eatbutton" data-id="{{this.id}}"
               data-newDevoured="{{devour}}">Devour</button>
             <hr>
@@ -37,14 +37,14 @@
 
     <div class="col-sm-6">
       <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3>Burgers You Devoured</h3>
+        <div class="panel-heading" id="righthead">
+          <h4>Burgers You Devoured</h4>
           </div>
         <div class="panel-body">
           <ul>
             {{#each burgers}}
             {{#if devoured}}
-            <h4> {{this.id}} - {{this.burger_name}} </h4>
+            <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
           
             <hr>
             {{/if}}
