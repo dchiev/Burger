@@ -4,28 +4,22 @@ li {
     background: #faebd7;
   }
   
-  .label {
-    font-weight: bold;
-  }
-  
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
+img {
+  width: 25%;
+}
   
   .form-group {
     margin-bottom: 5px;
   }
 
   body {
-    background-color: yellow;
+    background-color: #DA291C;
   }
   
   .jumbotron {
-    background-image: url("../img/burger.png")
+    background-color: #FFC72C;
   }
 
   #eatbutton {
-    color:green;
+    color:#DA291C;
   }
