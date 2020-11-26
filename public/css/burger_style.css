@@ -22,3 +22,10 @@ li {
     background-color: yellow;
   }
   
+  .jumbotron {
+    background-image: url("../img/burger.png")
+  }
+
+  #eatbutton {
+    color:green;
+  }
